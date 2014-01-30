@@ -368,7 +368,7 @@ a:hover {
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	left: 0;
-	/*opacity: 0.5;*/
+	box-sizing: border-box;
 	transition: all 0.35s ease-in-out;
 	white-space: nowrap;
 }
@@ -1199,7 +1199,19 @@ ul.social-icons li a:hover {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
- 
+	.navbar-fixed-top, .navbar-fixed-bottom {
+		position: absolute;
+	}
+
+	#header {
+		height: 460px;
+	}
+
+	#header .caption {
+		width: 100%;
+		bottom: 0;
+		border-radius: 0;
+	}
 
     h1 {
         font-size: 40px;
@@ -1246,6 +1258,10 @@ ul.social-icons li a:hover {
 @media (min-width: 481px) and (max-width: 767px) {
 	.navbar-fixed-top, .navbar-fixed-bottom {
 		position: absolute;
+	}
+
+	#header {
+		height: 460px;
 	}
 
 	#header .caption {
