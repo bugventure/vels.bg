@@ -4,7 +4,7 @@ $(function () {
 		image = $("<img />").on("load", function () {			
 			$("#header .background")
 				.css("backgroundImage", "url(" + url + ")")
-				.addClass("visible");
+				.css("opacity", "1");
 		}).attr("src", url);
 
 	//Scroll To
