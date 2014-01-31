@@ -17,7 +17,7 @@ $(function () {
 	window.gmapsapiload = function () {
 		var coord = new google.maps.LatLng(42.156486, 24.738295);
 
-		var map = new google.maps.Map(document.getElementById("map-canvas"), {
+		var map = new google.maps.Map(document.getElementById("map"), {
 			center: coord,
 			zoom: 15,
 			disableDefaultUI: true
