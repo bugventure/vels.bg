@@ -3,7 +3,7 @@
    ========================================================================== */
 
 body {
-	padding-bottom: 460px;
+	padding-bottom: 440px;
 }
 
 section {
@@ -1052,7 +1052,7 @@ ul.social-icons li a:hover {
 #footer p {
 	color: #A5B2B9;
 	font-size: 11px;
-	margin: 20px auto;
+	margin: 10px auto;
 }
 
 #footer p a {
