@@ -1203,10 +1203,10 @@ ul.social-icons li a:hover {
 
 @media (max-width: 991px) {
     body {
-        padding-bottom: 80vh;
+        padding-bottom: 90vh;
     }
 
     #map {
-        height: 80vh;
+        height: 90vh;
     }
 }
