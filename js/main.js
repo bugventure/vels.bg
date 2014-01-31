@@ -26,7 +26,12 @@ $(function () {
 		var marker = new google.maps.Marker({
 			position: coord,
 			map: map,
-			icon: './img/marker.png'
+			icon: './img/marker.png',
+			url: 'https://maps.google.com/maps?q=ul.+%22Pobeda%22+15,+Plovdiv+4003,+Bulgaria&hl=en&ll=42.156588,24.738421&spn=0.008089,0.016512&sll=42.156699,24.738346&sspn=0.008089,0.016512&hnear=ulitsa+%22Pobeda%22+15,+4003+Plovdiv,+Bulgaria&t=m&z=17&iwloc=A'
+		});
+
+		google.maps.event.addListener(marker, 'click', function () {
+			document.location.href = this.url;
 		});
 	}
 
