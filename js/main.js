@@ -38,14 +38,4 @@ $(function () {
 	setTimeout(function () {
 		$("<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD6qm4syOispaR9OvJbEStMaJMC3mjNan4&sensor=false&callback=gmapsapiload' type='text/javascript' async='async' />").appendTo("body");
 	}, 1000);
-
-    // Adjust map height
-	var vpheight = $(window).height(),
-        footerHeight = $("footer").height(),
-        minDiff = 40;
-	
-	if (vpheight < footerHeight + minDiff) {
-	    $("body").css("paddingBottom", vpheight - minDiff);
-	    $("nav").css("position", "absolute");
-	}
 });

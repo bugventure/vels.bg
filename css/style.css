@@ -1201,19 +1201,12 @@ ul.social-icons li a:hover {
 	}
 }
 
+@media (max-width: 991px) {
+    body {
+        padding-bottom: 80vh;
+    }
 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 991px) {
-}
-
-
-
-/* Desktops and laptops ----------- */
-@media (min-width: 992px) and (max-width: 1199px) {
-}
-
-
-
-/* Large screens ----------- */
-@media (min-width: 1200px) and (max-width: 3000px) {
+    #map {
+        height: 80vh;
+    }
 }
