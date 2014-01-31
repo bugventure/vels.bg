@@ -12,20 +12,4 @@ $(function () {
 		event.preventDefault();
 		$("html,body").animate({ scrollTop: $(this.hash).offset().top }, 300)
 	});
-
-	//Scroll Spy Refresh
-	$('#navbar').scrollspy();
-
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 100) {
-			$('.scrollToTop').fadeIn();
-		} else {
-			$('.scrollToTop').fadeOut();
-		}
-	});
-
-	$('.scrollToTop').click(function () {
-		$("html, body").animate({ scrollTop: 0 }, 600);
-		return false;
-	});
 });

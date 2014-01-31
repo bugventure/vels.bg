@@ -313,7 +313,7 @@
 
 
 	<!--Latest News-->
-	<section id="latest-news" class="section" style="padding-top:0px;">
+	<section id="latest-news" class="section last-content" style="padding-top:0px;">
 		<div class="container">
 			<div class="row margin-40">
 				<div class="col-sm-12 text-center dark-gray">
@@ -363,83 +363,43 @@
 		</div>
 	</section>
 
-	<!--Twitter Feed-->
-	<!--<section id="twitter" class="section">
+	<footer id="footer">
+		<section id="map">
+			<div id="map-canvas">
+			</div>
+			<a id="map-link" href="https://maps.google.com/maps?q=ul.+%22Pobeda%22+15,+Plovdiv+4003,+Bulgaria&hl=en&ll=42.156588,24.738421&spn=0.008089,0.016512&sll=42.156699,24.738346&sspn=0.008089,0.016512&hnear=ulitsa+%22Pobeda%22+15,+4003+Plovdiv,+Bulgaria&t=m&z=17&iwloc=A" target="_blank"></a>
+		</section>
+
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 text-center">
-					<i class="fa fa-twitter fa-4x gray margin-20"></i>
-				</div>
-			</div>
-
-			<div class="col-sm-6" data-twttr-id="twttr-sandbox-0">
-				<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-tweet twitter-tweet-rendered" style="display: block; max-width: 99%; min-width: 220px; padding: 0px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; margin: 10px 0px; border-color: rgb(238, 238, 238) rgb(221, 221, 221) rgb(187, 187, 187); border-width: 1px; border-style: solid; box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 3px; position: static; visibility: visible;" title="Embedded Tweet" width="500" height="162"></iframe>
-				<script async="" src="js/widgets.js" charset="utf-8"></script>
-			</div>
-
-			<div class="col-sm-6" data-twttr-id="twttr-sandbox-1">
-				<iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-tweet twitter-tweet-rendered" style="display: block; max-width: 99%; min-width: 220px; padding: 0px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; margin: 10px 0px; border-color: rgb(238, 238, 238) rgb(221, 221, 221) rgb(187, 187, 187); border-width: 1px; border-style: solid; box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 3px; position: static; visibility: visible;" title="Embedded Tweet" width="500" height="210"></iframe>
-				<script async="" src="js/widgets.js" charset="utf-8"></script>
-			</div>
-
-		</div>
-	</section>-->
-	<!--Bottom Section-->
-	<section id="bottom">
-		<div class="container">
-			<div class="row margin-40">
-				<div class="col-sm-10 col-sm-offset-1 text-center">
-					<p>1234 Main Street Atlanta, GA 30305 | 404.555.5555  |  <a href="mailto:support@themearmada.com"><i class="icon-envelope-alt"></i> support@themearmada.com</a></p>
-					<hr>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-sm-10 col-sm-offset-1 text-center">
-					<!--Social Icons-->
-					<ul class="social-icons">
-						<li><a class="twitter" href="http://www.twitter.com/themearmada" target="_blank"><i class="fa fa-twitter fa-3x"></i></a></li>
-						<li><a class="facebook" href="http://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></li>
-						<li><a class="google" href="http://www.googleplus.com/" target="_blank"><i class="fa fa-google-plus fa-3x"></i></a></li>
-						<li><a class="instagram" href="http://www.instagram.com/" target="_blank"><i class="fa fa-camera-retro fa-3x"></i></a></li>
-						<li><a class="pinterest" href="http://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest fa-3x"></i></a></li>
-						<li><a class="linkedin" href="http://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
-						<li><a class="Github" href="http://www.github.com/" target="_blank"><i class="fa fa-github-alt fa-3x"></i></a></li>
-					</ul>
-				</div>
-			</div>
-
-		</div>
-	</section>
-
-
-	<section id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 text-center">
-					<p>@ Copyright. All Rights Reserved. Created by <a href="http://www.themearmada.com/">Theme Armada.</a></p>
+					<p>@ Copyright 2014. <a href="http://www.vels.bg">Велс ЕООД.</a></p>
 				</div>
 			</div>
 		</div>
-	</section>
-
-	<a href="#top" class="scrollToTop " style="display: inline;"><i class="fa fa-chevron-up"></i></a>
-
-	<!-- Javascript
-	================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
+	</footer>
+		
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/main.js"></script>
 
-	<script>
-		!function ($) {
-			$(function () {
-				$('#header').carousel()
-			})
-		}(window.jQuery)
-	</script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6qm4syOispaR9OvJbEStMaJMC3mjNan4&sensor=false"></script>
+	<script type="text/javascript">
+		google.maps.event.addDomListener(window, 'load', function () {
+			var coord = new google.maps.LatLng(42.156486, 24.750000);
 
-	<iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" style="display: none;"></iframe>
+			var map = new google.maps.Map(document.getElementById("map-canvas"), {
+				center: coord,
+				zoom: 15,
+				disableDefaultUI: true
+			});
+
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(42.156486, 24.738295),
+				map: map,
+				icon: './img/marker.png'
+			});
+		});
+	</script>
 </body>
 </html>
