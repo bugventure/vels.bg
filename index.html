@@ -28,7 +28,7 @@
 	<link rel="shortcut icon" href="http://themearmada.com/favicon.png">-->
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar" data-offset="200">
-	<div class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
 				<a class="navbar-brand img-responsive" href="index.html"><img src="img/logo.png" alt="logo"></a>
@@ -43,9 +43,9 @@
 				</ul>
 			</div>
 		</div>
-	</div>
+	</nav>
 	
-	<div id="header">
+	<header>
 		<div class="background"></div>
 		<div class="container">
 			<div class="caption">
@@ -54,7 +54,7 @@
 				<a class="btn-main scroll" href="#services"><i class="icon-chevron-right"></i> Какво предлагаме</a>
 			</div>
 		</div>
-	</div>
+	</header>
 
 	<!--Services-->
 	<section id="services" class="section">
@@ -313,7 +313,7 @@
 
 
 	<!--Latest News-->
-	<section id="latest-news" class="section last-content" style="padding-top:0px;">
+	<section id="latest-news" class="section shadow" style="padding-top:0px;">
 		<div class="container">
 			<div class="row margin-40">
 				<div class="col-sm-12 text-center dark-gray">
@@ -382,24 +382,5 @@
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/main.js"></script>
-
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6qm4syOispaR9OvJbEStMaJMC3mjNan4&sensor=false"></script>
-	<script type="text/javascript">
-		google.maps.event.addDomListener(window, 'load', function () {
-			var coord = new google.maps.LatLng(42.156486, 24.750000);
-
-			var map = new google.maps.Map(document.getElementById("map-canvas"), {
-				center: coord,
-				zoom: 15,
-				disableDefaultUI: true
-			});
-
-			var marker = new google.maps.Marker({
-				position: new google.maps.LatLng(42.156486, 24.738295),
-				map: map,
-				icon: './img/marker.png'
-			});
-		});
-	</script>
 </body>
 </html>

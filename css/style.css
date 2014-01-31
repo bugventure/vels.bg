@@ -8,6 +8,8 @@ body {
 
 section {
 	background-color: #fff;
+	z-index: 2;
+	position: relative;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -333,14 +335,15 @@ a:hover {
    Header Styles
    ========================================================================== */
 
-#header {
+header {
 	background-color: #31363a;
 	margin-bottom: 0px;
 	height: 550px;
 	position: relative;
+	z-index: 2;
 }
 
-#header .background {
+header .background {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -350,13 +353,13 @@ a:hover {
 	opacity: 0;
 }
 
-#header .container {
+header .container {
 	position: relative;
 	z-index: 9;
 	height: 100%;
 }
 
-#header .caption {
+header .caption {
 	position: absolute;
 	bottom: 30%;
 	padding: 30px 30px 40px;
@@ -1032,16 +1035,37 @@ ul.social-icons li a:hover {
 	transition: all 0.35s ease-in-out;
 }
 
-.last-content {
-	/*-moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.4);
-	-webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.4);*/
-	box-shadow: 0px 6px 9px -2px rgba(0,0,0,0.4);
+.shadow {	
+	-moz-box-shadow: 0px 9px 12px -2px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0px 9px 12px -2px rgba(0,0,0,0.4);
+	box-shadow: 0px 9px 12px -2px rgba(0,0,0,0.4);	
+}
+
+#footer {
+	width: 100%;
+	background: #31363A;
+	position: fixed;
+	bottom: 0;
+	z-index: 0;
+}
+
+#footer p {
+	color: #A5B2B9;
+	font-size: 11px;
+	margin: 20px auto;
+}
+
+#footer p a {
+	color: #A5B2B9;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 #map {
 	width: 100%;
 	height: 400px;
 	background-color: #31363a;
+	position: relative;
 }
 
 #map-canvas {
@@ -1060,31 +1084,12 @@ ul.social-icons li a:hover {
 }
 
 #map-link {
+	display: block;
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	left: 0;
 	top: 0;
-}
-
-#footer {
-	width: 100%;
-	background: #31363A;
-	position: fixed;
-	bottom: 0;
-	z-index: -1;
-}
-
-#footer p {
-	color: #A5B2B9;
-	font-size: 11px;
-	margin: 20px auto;
-}
-
-#footer p a {
-	color: #A5B2B9;
-	font-weight: bold;
-	text-decoration: none;
 }
 
 /* ==========================================================================
@@ -1097,11 +1102,11 @@ ul.social-icons li a:hover {
 		position: absolute;
 	}
 
-	#header {
+	header {
 		height: 460px;
 	}
 
-	#header .caption {
+	header .caption {
 		width: 100%;
 		bottom: 0;
 		border-radius: 0;
@@ -1154,11 +1159,11 @@ ul.social-icons li a:hover {
 		position: absolute;
 	}
 
-	#header {
+	header {
 		height: 460px;
 	}
 
-	#header .caption {
+	header .caption {
 		width: 100%;
 		bottom: 0;
 		border-radius: 0;
