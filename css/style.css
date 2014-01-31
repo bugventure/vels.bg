@@ -339,7 +339,6 @@ header {
 	background-color: #31363a;
 	margin-bottom: 0px;
 	height: 550px;
-	position: relative;
 	z-index: 2;
 }
 
@@ -371,6 +370,21 @@ header .caption {
 	box-sizing: border-box;
 	transition: all 0.35s ease-in-out;
 }
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
+}
+
+.carousel-indicators li {
+    border-color: transparent;
+    background-color: #fff;
+}
+
+.carousel-indicators li.active {
+    background-color: #FF755A;
+    border-color: #FF755A;
+}
+
 /* ==========================================================================
    Content Styles
    ========================================================================== */

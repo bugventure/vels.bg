@@ -45,15 +45,57 @@
 		</div>
 	</nav>
 	
-	<header>
+	<header id="carousel" class="carousel slide" data-ride="carousel">
 		<div class="background"></div>
-		<div class="container">
-			<div class="caption">
-				<h1>100% Responsive</h1>
-				<p class="lead margin-40"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
-				<a class="btn-main scroll" href="#services"><i class="icon-chevron-right"></i> Какво предлагаме</a>
-			</div>
-		</div>
+        
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="container">
+                    <div class="caption">
+                        <h1>100% Сигурност</h1>
+                        <p class="lead margin-40"><em>на вашия бизнес в ръцете на нашите експерти.</em></p>
+                        <a class="btn-main scroll" href="#services">Какво предлагаме</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="container">
+                    <div class="caption">
+                        <h1>Пълна гама счетоводни услуги</h1>
+                        <p class="lead margin-40"><em>Данъчни декларации, ДДС, ТРЗ, ДОО, ЗОВ, ОПР, банкови извлечения, складови отчети.</em></p>
+                        <a class="btn-main scroll" href="#services">Нашите услуги</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="container">
+                    <div class="caption">
+                        <h1>Данъчна защита на най-високо ниво</h1>
+                        <p class="lead margin-40"><em>С нас, данъчната ревизия вече не е повод за притеснение.</em></p>
+                        <a class="btn-main scroll" href="#services">Нашите услуги</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="container">
+                    <div class="caption">
+                        <h1>Експертна финансова консултация.</h1>
+                        <p class="lead margin-40"><em>Данъчни декларации, ДДС, ТРЗ, ДОО, ЗОВ, ОПР, банкови извлечения, складови отчети.</em></p>
+                        <a class="btn-main scroll" href="#services">Нашите услуги</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</header>
 
 	<!--Services-->
@@ -377,6 +419,7 @@
 		
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
