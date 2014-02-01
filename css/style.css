@@ -385,10 +385,6 @@ header .caption p {
     height: 100%;
 }
 
-.carousel-indicators {
-    zoom: 1;
-}
-
 .carousel-indicators li {
     border-color: transparent;
     background-color: #fff;
@@ -442,6 +438,10 @@ header .caption p {
 
 #twitter {
     background: #dfe5e8;
+}
+
+.fa {
+    *display: none;
 }
 
 
