@@ -409,10 +409,6 @@ header .caption p {
     margin-top: 50px;
 }
 
-#message {
-    background: #a5b2b9;
-}
-
 #message h2 {
     margin-bottom: 20px;
 }
@@ -466,7 +462,7 @@ header .caption p {
 .about {
     background-color: #a5b2b9;
     background-color: #ff755a;
-    padding: 40px;
+    padding: 20px 40px 40px;
     position: relative;
 }
 
@@ -495,7 +491,7 @@ blockquote p {
 }
 
 blockquote p {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .about::after {
@@ -504,7 +500,7 @@ blockquote p {
     width: 0;
     height: 0;
     border-style: solid;
-    border-color: transparent transparent transparent #ff755a;;
+    border-color: transparent transparent transparent #ff755a;
     border-width: 20px;
     left: 100%;
     top: 110px;
@@ -513,6 +509,10 @@ blockquote p {
 #about .author {
     margin: 40px 0;
     text-align: center;
+}
+
+#about .author span {
+    color: #ff755a;
 }
 
 /* ==========================================================================
@@ -641,190 +641,11 @@ blockquote p {
     height: 60px;
 }
 
-
-
-
-
-
-
-/* ==========================================================================
-   Pricing Styles
-   ========================================================================== */
-.pricing-table {
-    background: #dfe5e8;
-    width: 100%;
-    border: 1px solid #f1f1f1;
-    margin-top: 20px;
-    margin-bottom: 45px;
-}
-
-.pricing-table.active {
-    -moz-box-shadow: 1px 1px 16px #919191;
-    -webkit-box-shadow: 1px 1px 16px #919191;
-    box-shadow: 1px 1px 16px #919191;
-    border: 0px solid #f1f1f1;
-    margin-top: 0px;
-}
-
-.pricing-table.active .headline {
-    background: #31363a;
-    height: 100px;
-    top: 0px;
-}
-
-.pricing-table.active .headline:after {
-    border-color: #31363a transparent;
-}
-
-.pricing-table li {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.headline {
-    background: #ff755a;
-    padding: 6px 6px 0px 6px;
-    background-size: contain;
-    position: relative;
-    height: 66px;
-}
-
-.headline h2 {
-    color: #FFFFFF;
-    margin-top: 0px;
-}
-
-.headline:after {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    left: 44%;
-    border-style: solid;
-    border-width: 15px 15px 0;
-    border-color: #ff755a transparent;
-    display: block;
-    z-index: 1;
-}
-
-.price {
-    background: none repeat scroll 0 0 #ffffff;
-    color: #31363A;
-    font-weight: bold;
-    margin-top: -15px;
-    padding-bottom: 20px;
-    padding-top: 45px;
-}
-
-.price small {
-    font-weight: 300;
-    color: #a5b2b9;
-}
-
-.info {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-weight: 300;
-    color: #a5b2b9;
-}
-
-.features {
-    color: #31363a;
-    font-weight: bold;
-    padding-top: 12px;
-    padding-bottom: 15px;
-    border-bottom: 1px dotted #ffffff;
-}
-
-.features.first {
-    border-top: 1px dotted #ffffff;
-}
-
-.features.last {
-    padding-top: 17px;
-    padding-bottom: 20px;
-}
-
-/* ==========================================================================
-   Latest Work and Portfolio Styles
-   ========================================================================== */
-#latest-work {
-    background: url(../img/grid_noise.png) repeat;
-    background-color: #ebebeb;
-}
-
-.thumbs {
-    width: 100%;
-    float: left;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.thumbs a {
-    background-color: rgba(255,117,89,0.90);
-    bottom: -200px;
-    color: white;
-    left: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    text-transform: uppercase;
-    top: 0;
-    z-index: 100;
-}
-
-.thumbs a span.title {
-    display: table;
-    width: 100%;
-    height: 90%;
-}
-
-.thumbs a span.title span {
-    font-family: 'Lato', sans-serif;
-    *font-family: Arial, Verdana, sans-serif;
-    font-weight: bold;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    vertical-align: middle;
-    display: table-cell;
-}
-
-.thumbs a:hover {
-    bottom: 0;
-    opacity: 1;
-    transition: opacity 0.30s ease-in-out 0s, bottom 0.4s cubic-bezier(0.25, 0.500, 0, 1) 0s;
-    -webkit-transition: opacity 0.30s ease-in-out 0s, bottom 0.4s cubic-bezier(0.25, 0.500, 0, 1) 0s;
-}
-
-.flexslider {
-    margin: 0 0 60px;
-    background: transparent;
-    border: none;
-    position: relative;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -o-border-radius: 0px;
-    border-radius: 0px;
-    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.0);
-    -moz-box-shadow: 0 0px 0px rgba(0,0,0,.0);
-    -o-box-shadow: 0 0px 0px rgba(0,0,0,.0);
-    box-shadow: 0 0px 0px rgba(0,0,0,.0);
-    zoom: 1;
-}
-
-ul.icons li {
-    list-style: none;
-    padding: 7px 0 5px 0;
-}
-
-
 /* ==========================================================================
    Testimonial styles
    ========================================================================== */
-#testimonial {
+#testimonial,
+#message {
     background: url(../img/testimonial-bg.jpg) no-repeat;
     background-size: cover;
 }
@@ -921,6 +742,14 @@ ul.social-icons li a:hover {
     box-shadow: 0px 9px 12px -2px rgba(0,0,0,0.4);
 }
 
+#contact {
+    padding: 0;
+}
+
+.contact {
+    text-align: center;
+}
+
 #map {
     width: 100%;
     height: 450px;
@@ -1003,6 +832,10 @@ ul.social-icons li a:hover {
         padding-bottom: 90vh;
     }
 
+    .navbar-fixed-top, .navbar-fixed-bottom {
+        position: absolute;
+    }
+
     #map {
         height: 90vh;
     }
@@ -1011,10 +844,6 @@ ul.social-icons li a:hover {
 @media (max-width: 767px) {
     body {
         font-size: 16px;
-    }
-
-    .navbar-fixed-top, .navbar-fixed-bottom {
-        position: absolute;
     }
 
     header {
