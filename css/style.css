@@ -464,9 +464,8 @@ header .caption p {
 }
 
 .about {
-    background: transparent url(../img/semitrans.png) repeat scroll 0 0\9;
-    background-color: rgba(0,0,0,0.3);
     background-color: #a5b2b9;
+    background-color: #ff755a;
     padding: 40px;
     position: relative;
 }
@@ -475,12 +474,14 @@ header .caption p {
     position: absolute;
     left: 15px;
     top: 15px;
+    color: #fff;
 }
 
 .about .fa-quote-right {
     position: absolute;
     right: 15px;
     bottom: 15px;
+    color: #fff;
 }
 
 blockquote,
@@ -493,12 +494,17 @@ blockquote p {
     color: #fff;
 }
 
-#about .arrow {
+blockquote p {
+    margin-top: 10px;
+}
+
+.about::after {
+    content: ' ';
     position: absolute;
     width: 0;
     height: 0;
     border-style: solid;
-    border-color: transparent transparent transparent #a5b2b9;
+    border-color: transparent transparent transparent #ff755a;;
     border-width: 20px;
     left: 100%;
     top: 110px;
@@ -1052,7 +1058,7 @@ ul.social-icons li a:hover {
         margin: 0;
     }
 
-    #about .arrow {
+    .about::after {
         border-color: #a5b2b9 transparent transparent transparent;
         border-width: 20px;
         right: auto;
