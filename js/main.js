@@ -43,7 +43,7 @@ $(function () {
 	}
 
 	if ($.browser.msie && parseInt($.browser.version, 10) <= 7) {
-	    alert(opa);
+	    alert("opa");
 	}
 	else {
 	    setTimeout(function () {
