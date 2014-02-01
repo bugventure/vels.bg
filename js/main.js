@@ -42,7 +42,12 @@ $(function () {
 		});
 	}
 
-	setTimeout(function () {
-		$("<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD6qm4syOispaR9OvJbEStMaJMC3mjNan4&sensor=false&callback=gmapsapiload' type='text/javascript' async='async' />").appendTo("body");
-	}, 1000);
+	if ($.browser.msie && parseInt($.browser.version, 10) <= 7) {
+	    alert(opa);
+	}
+	else {
+	    setTimeout(function () {
+	        $("<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD6qm4syOispaR9OvJbEStMaJMC3mjNan4&sensor=false&callback=gmapsapiload' type='text/javascript' async='async' />").appendTo("body");
+	    }, 1000);
+	}
 });
