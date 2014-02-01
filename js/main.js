@@ -45,7 +45,7 @@ $(function () {
 
 	if ($.browser.msie && parseInt($.browser.version, 10) <= 7) {
 	    var map = $("#map");
-	    map.html("<a href='" + bigMapUrl + "'><img src='http://maps.googleapis.com/maps/api/staticmap?size=" + map.width() + "x" + map.height() + "&zoom=15&markers=42.156486,24.738295&sensor=false' /></a>");
+	    map.html("<a href='" + bigMapUrl + "'><img src='http://maps.googleapis.com/maps/api/staticmap?size=" + map.width() + "x" + map.height() + "&zoom=15&markers=42.156486,24.738295&sensor=false&key=AIzaSyD6qm4syOispaR9OvJbEStMaJMC3mjNan4' /></a>");
 	}
 	else {
 	    setTimeout(function () {
