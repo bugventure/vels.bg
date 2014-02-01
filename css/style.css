@@ -415,22 +415,26 @@ header .caption p {
 }
 
 .service {
-    height: 260px;
     padding-top: 30px;
-}
-
-.service:hover i {
-    color: #626c72;
-    transition: all 0.35s ease-in-out;
     cursor: default;
 }
 
-.service:hover * {
-    cursor: default;
+.service i {
+    float: left;
+    color: #FF755A;
 }
 
 .service h3 {
     margin-top: 40px;
+    transition: all 0.35s ease-in-out;
+}
+
+.service:hover h3 {
+    color: #FF755A;
+}
+
+.service:hover * {
+    cursor: default;
 }
 
 .service-icons {
@@ -441,10 +445,6 @@ header .caption p {
 .service p {
     margin-left: 60px;
     margin-top: 0;
-}
-
-.service i {
-    float: left;
 }
 
 #twitter {
@@ -949,7 +949,7 @@ ul.social-icons li a:hover {
     margin: auto;
     padding: 0;
     height: 100%;
-    border: 0
+    border: 0;
 }
 
 #footer {
@@ -982,51 +982,30 @@ ul.social-icons li a:hover {
    Mobiles styles
    ========================================================================== */
 
-/* Landscape phones and down */
-@media (max-width: 480px) {
-    .navbar-fixed-top, .navbar-fixed-bottom {
-        position: absolute;
+@media (max-width: 1023px) {
+    .service h3,
+    .service p {
+        margin-left: 0;
     }
 
-    header {
-        height: 460px;
-    }
-
-    header .caption {
-        width: 100%;
-        bottom: 0;
-        -moz-border-radius: 0;
-        -webkit-border-radius: 0;
-        border-radius: 0;
-    }
-
-    h1 {
-        
-    }
-
-    .navbar .nav > li > a {
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-
-    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-        color: #FFFFFF;
-    }
-
-    .img-responsive {
-        margin: auto;
-    }
-
-    .team-container {
-        width: 100%;
-    }
-
-    .img-responsive {
-        margin: auto;
+    .service i {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
     }
 }
 
-/* Landscape phone to portrait tablet */
+@media (max-width: 991px) {
+    body {
+        padding-bottom: 90vh;
+    }
+
+    #map {
+        height: 90vh;
+    }
+}
+
 @media (max-width: 767px) {
     .navbar-fixed-top, .navbar-fixed-bottom {
         position: absolute;
@@ -1075,17 +1054,52 @@ ul.social-icons li a:hover {
         padding: 0;
     }
 
-    .service {
-        height: auto;
+    .service h3,
+    .service p {
+        margin-left: 60px;
+    }
+
+    .service i {
+        float: left;
+        margin: 0;
     }
 }
 
-@media (max-width: 991px) {
-    body {
-        padding-bottom: 90vh;
+@media (max-width: 480px) {
+    .navbar-fixed-top, .navbar-fixed-bottom {
+        position: absolute;
     }
 
-    #map {
-        height: 90vh;
+    header {
+        height: 460px;
+    }
+
+    header .caption {
+        width: 100%;
+        bottom: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+    }
+
+    .navbar .nav > li > a {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #FFFFFF;
+    }
+
+    .img-responsive {
+        margin: auto;
+    }
+
+    .team-container {
+        width: 100%;
+    }
+
+    .img-responsive {
+        margin: auto;
     }
 }
