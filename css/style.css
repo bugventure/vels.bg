@@ -12,6 +12,7 @@ section {
     background-color: #fff;
     z-index: 2;
     position: relative;
+    padding: 70px 0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -370,6 +371,7 @@ header .caption {
 
 header .caption p {
     font-weight: 200;
+    font-style: italic;
 }
 
 .carousel-inner,
@@ -392,9 +394,6 @@ header .caption p {
 /* ==========================================================================
    Content Styles
    ========================================================================== */
-.section {
-    padding: 70px 0;
-}
 
 #content1 {
     background: #ffffff;
@@ -845,23 +844,20 @@ ul.icons li {
 }
 
 /* ==========================================================================
-   Latest News styles
+   Why Us
    ========================================================================== */
-#latest-news {
-    background: #ffffff;
-}
 
-.latest-article img {
-    margin-bottom: 15px;
-    margin: 0 auto;
-}
-
-.latest-article p {
+.reason p,
+.reason i {
     text-align: center;
     color: #626C72;
 }
 
-.latest-article {
+.reason i {
+    margin-top: 20px;
+}
+
+.reason {
     position: relative;
     padding: 10px 10px 30px 10px;
     background: #dfe5e8;
@@ -871,7 +867,7 @@ ul.icons li {
     margin-bottom: 30px;
 }
 
-.latest-article:after {
+.reason:after {
     content: "";
     position: absolute;
     bottom: -15px;
@@ -996,6 +992,12 @@ ul.social-icons li a:hover {
     }
 }
 
+@media (min-width: 768px) {
+    #why-us .col-sm-3 {
+        width: 50%;
+    }
+}
+
 @media (max-width: 991px) {
     body {
         padding-bottom: 90vh;
@@ -1050,7 +1052,7 @@ ul.social-icons li a:hover {
         margin: auto;
     }
 
-    .section {
+    section {
         padding: 0;
     }
 
