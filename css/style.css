@@ -1013,6 +1013,10 @@ ul.social-icons li a:hover {
 }
 
 @media (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
     .navbar-fixed-top, .navbar-fixed-bottom {
         position: absolute;
     }
