@@ -413,6 +413,10 @@ header .caption p {
     background: #a5b2b9;
 }
 
+#message h2 {
+    margin-bottom: 20px;
+}
+
 .service {
     padding-top: 30px;
     cursor: default;
@@ -1053,7 +1057,7 @@ ul.social-icons li a:hover {
     }
 
     section {
-        padding: 0;
+        padding: 20px 0;
     }
 
     .service h3,
