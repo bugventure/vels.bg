@@ -948,6 +948,15 @@ ul.social-icons li a:hover {
     width: 100%;
 }
 
+#map img,
+#map a {
+    display: block;
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    border: 0
+}
+
 #footer {
     width: 100%;
     background: #31363A;
