@@ -388,11 +388,6 @@ header .caption p {
     height: 100%;
 }
 
-.carousel-indicators {
-    bottom: auto;
-    top: 115px;
-}
-
 .carousel-indicators li {
     border-color: transparent;
     background-color: #fff;
@@ -1177,7 +1172,7 @@ ul.social-icons li a:hover {
 }
 
 /* Landscape phone to portrait tablet */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .navbar-fixed-top, .navbar-fixed-bottom {
         position: absolute;
     }
@@ -1194,12 +1189,13 @@ ul.social-icons li a:hover {
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 32px;
         line-height: 38px;
     }
 
     .carousel-indicators {
-        top: 95px;
+        bottom: auto;
+        top: 85px;
     }
 
     .navbar .nav > li > a {
