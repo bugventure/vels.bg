@@ -366,8 +366,8 @@ header .caption {
     position: absolute;
     top: 180px;
     padding: 30px 30px 40px;
-    background-color: #626262;
-    background-color: rgba(0,0,0,0.6);
+    background: transparent url(../img/semitrans.png) repeat scroll 0 0;
+    /*background-color: rgba(0,0,0,0.6);*/
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
