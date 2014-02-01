@@ -1,10 +1,17 @@
 $(function () {
-	//Header image
-	var url = "./img/plovdiv" + (Math.floor(Math.random() * 5) + 1) + ".jpg",
+    //Header image
+    var bgcount = 2,
+        sources = [
+            "http://goo.gl/WE5u8K",
+            "http://goo.gl/lqmIPI"
+        ],
+        index = (Math.floor(Math.random() * bgcount) + 1)
+	    url = "./img/plovdiv" + index + ".jpg",
 		image = $("<img />").on("load", function () {			
-			$("header .background")
+		    $("header .background")
 				.css("backgroundImage", "url(" + url + ")")
-				.css("opacity", "1");
+				.css("opacity", "1")
+		        .find(".info").text("Photo: " + sources[index - 1]);
 		}).attr("src", url);
 
 	//Scroll To
