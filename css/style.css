@@ -5,6 +5,7 @@
 body {
     padding-bottom: 440px;
     *padding-bottom: 0;
+    *font-family: Arial, Verdana, sans-serif;
 }
 
 section {
