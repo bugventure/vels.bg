@@ -464,15 +464,10 @@ header .caption p {
 }
 
 .about {
-    background-color: #dfe5e8;
-    background-color: #fff;
+    background: transparent url(../img/semitrans.png) repeat scroll 0 0\9;
+    background-color: rgba(0,0,0,0.3);
+    background-color: #a5b2b9;
     padding: 40px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    -moz-box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.4);
-    box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.4);
     position: relative;
 }
 
@@ -495,11 +490,23 @@ blockquote p {
     padding: 0;
     font-size: 1.05em;
     line-height: 1.4em;
+    color: #fff;
+}
+
+#about .arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent transparent #a5b2b9;
+    border-width: 20px;
+    left: 100%;
+    top: 110px;
 }
 
 #about .author {
+    margin: 40px 0;
     text-align: center;
-    margin-top: 40px;
 }
 
 /* ==========================================================================
@@ -1031,18 +1038,6 @@ ul.social-icons li a:hover {
         color: #FFFFFF;
     }
 
-    .img-responsive {
-        margin: auto;
-    }
-
-    .team-container {
-        width: 100%;
-    }
-
-    .img-responsive {
-        margin: auto;
-    }
-
     section {
         padding: 20px 0;
     }
@@ -1055,6 +1050,15 @@ ul.social-icons li a:hover {
     .service i {
         float: left;
         margin: 0;
+    }
+
+    #about .arrow {
+        border-color: #a5b2b9 transparent transparent transparent;
+        border-width: 20px;
+        right: auto;
+        top: 100%;
+        left: 50%;
+        margin-left: -20px;
     }
 }
 
