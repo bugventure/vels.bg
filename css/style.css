@@ -863,15 +863,6 @@ ul.social-icons li a:hover {
     text-decoration: none;
 }
 
-.row {
-    *position: relative;
-    zoom: 1
-}
-
-.col-sm-4 {
-    *width: 30% !important;
-}
-
 /* ==========================================================================
    Mobiles styles
    ========================================================================== */
