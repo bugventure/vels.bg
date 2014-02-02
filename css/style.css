@@ -759,10 +759,6 @@ ul.social-icons li a:hover {
         bottom: 80px;
         z-index: 1;
         padding: 0;
-        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-        margin-left: -360px;
         margin-left: -360px;
     }
 
