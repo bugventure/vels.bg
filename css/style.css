@@ -751,7 +751,7 @@ ul.social-icons li a:hover {
     text-align: center;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     #contact {
         width: 260px;
         left: 50%;
@@ -867,7 +867,7 @@ ul.social-icons li a:hover {
    Mobiles styles
    ========================================================================== */
 
-@media (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
     .service h3,
     .service p {
         margin-left: 0;
@@ -881,27 +881,37 @@ ul.social-icons li a:hover {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     #why-us .col-sm-3 {
         width: 50%;
     }
 }
 
-@media (max-width: 991px) {
-    body {
-        padding-bottom: 90vh;
+@media only screen and (max-width: 991px) {
+	.navbar-fixed-top, .navbar-fixed-bottom {
+        position: absolute;
     }
 
-    .navbar-fixed-top, .navbar-fixed-bottom {
-        position: absolute;
+    /*body {
+        padding-bottom: 90vh;
     }
 
     #map {
         height: 90vh;
+    }*/
+}
+
+@media only screen and (max-height: 450px) {
+	body {
+        padding-bottom: 300px;
+    }
+
+    #map {
+        height: 300px;
     }
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     body {
         font-size: 16px;
     }
@@ -990,12 +1000,13 @@ ul.social-icons li a:hover {
     }
 
     #contact a {
-        float: left;
-        margin-left: 15px;
+        display: inline-block;
+		margin-left: 15px;
+		white-space: nowrap;
     }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .navbar-fixed-top, .navbar-fixed-bottom {
         position: absolute;
     }
