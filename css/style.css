@@ -269,11 +269,12 @@ nav .container {
 }
 
 nav .nav {
-	margin-right: 55px !important;
+	margin-right: 95px !important;
 }
 
 .icon-bg,
-.icon-tr {
+.icon-tr,
+.icon-gb {
 	color: transparent;
 	text-indent: -10000px;
 	width: 70px;
@@ -289,6 +290,11 @@ nav .nav {
 
 .icon-tr {
 	background: transparent url(../img/Turkey.png) no-repeat center center;
+}
+
+.icon-gb {
+	background: transparent url(../img/GB.png) no-repeat center center;
+	right: 42px;
 }
 
 /* ==========================================================================
